@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" thread-count="3"  parallel="tests">
+<suite name="All Test Suite By Karim" thread-count="3"  parallel="tests">
 
     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
     <test verbose="2" preserve-order="true" name="Chrome Test" >
