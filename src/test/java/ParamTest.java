@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -18,10 +19,11 @@ public class ParamTest {
     @BeforeClass
     @Parameters({"browser"})
     void setup(String browser) throws InterruptedException {
-        switch (browser){
+        switch (browser.toLowerCase()){
             case "chrome" :  driver = new ChromeDriver(); break ;
             case "edge" :    driver = new EdgeDriver(); break ;
             case "firefox" : driver = new FirefoxDriver(); break ;
+            case "safari" : driver = new SafariDriver(); break ;
             default:
                 System.out.println("Invalid browser.");
                 return ;
