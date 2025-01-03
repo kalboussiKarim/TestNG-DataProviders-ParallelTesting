@@ -26,7 +26,7 @@ This project provides practical demonstrations of advanced TestNG features such 
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/kalboussiKarim/TestNG-DataProviders...ParallelTesting.git
+   git clone https://github.com/kalboussiKarim/TestNG-DataProviders-ParallelTesting.git
    ```
 2. Import the project into your favorite IDE (e.g., IntelliJ IDEA, Eclipse).
 3. Explore the examples in the provided code files.
