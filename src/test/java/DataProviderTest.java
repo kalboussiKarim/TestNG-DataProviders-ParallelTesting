@@ -41,7 +41,7 @@ public class DataProviderTest {
         driver.quit();
     }
 
-    @DataProvider(name="dpi")
+    @DataProvider(name="dp1",indices = {0})
     Object[][] loginData(){
         return new Object[][]{
                 {"kalboussikarim@gmail.com","123456789"},
