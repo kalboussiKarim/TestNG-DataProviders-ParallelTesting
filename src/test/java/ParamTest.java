@@ -17,8 +17,8 @@ public class ParamTest {
     WebDriver driver;
 
     @BeforeClass
-    @Parameters({"browser"})
-    void setup(String browser) throws InterruptedException {
+    @Parameters({"browser","url"})
+    void setup(String browser, String url) throws InterruptedException {
         switch (browser.toLowerCase()){
             case "chrome" :  driver = new ChromeDriver(); break ;
             case "edge" :    driver = new EdgeDriver(); break ;
@@ -28,7 +28,7 @@ public class ParamTest {
                 System.out.println("Invalid browser.");
                 return ;
         }
-        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        driver.get(url);
         driver.manage().window().maximize();
         Thread.sleep(2000);
 

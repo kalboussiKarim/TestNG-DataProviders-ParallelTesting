@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" thread-count="3"  parallel="tests">
+
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
     <test verbose="2" preserve-order="true" name="Chrome Test" >
         <parameter name="browser" value="chrome"/>
+        <!-- <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/> -->
+
         <classes>
             <class name="ParamTest"/>
         </classes>
@@ -10,6 +14,7 @@
 
     <test verbose="2" preserve-order="true" name="Edge Test">
         <parameter name="browser" value="edge"/>
+        <!-- <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/> -->
         <classes>
             <class name="ParamTest"/>
         </classes>
@@ -17,6 +22,7 @@
 
     <test verbose="2" preserve-order="true" name="FireFox Test">
         <parameter name="browser" value="firefox"/>
+        <!-- <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/> -->
         <classes>
             <class name="ParamTest"/>
         </classes>
